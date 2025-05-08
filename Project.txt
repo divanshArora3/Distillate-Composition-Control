@@ -27,7 +27,7 @@ This is achieved by manipulating the 'reflux ratio' and responding to disturbanc
 
 
 ** System Layout Explanation **
-"We're working with a *binary distillation column* separating **cyclohexane** and **n-heptane**. The distillate (xd) composition is our "controlled variable", and the reflux ratio is the "manipulated variable".
+"We're working with a 'binary distillation column' separating "cyclohexane" and "n-heptane". The distillate (xd) composition is our "controlled variable", and the reflux ratio is the "manipulated variable".
 Measured disturbances include 'feed rate' and 'feed composition', which influence system behavior."
 
 ** Simulation Overview **
