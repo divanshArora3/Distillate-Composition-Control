@@ -3,36 +3,34 @@
 
 
 
-** Objective**
-"The main objective is to maintain the *overhead mole fraction of the light component*, which is cyclohexane in our case, at a target composition of **0.970**.
-This is achieved by manipulating the *reflux ratio* and responding to disturbances like feed flow rate and composition."
+** Objective **
+"The main objective is to maintain the *overhead mole fraction of the light component*, which is cyclohexane in our case, at a target composition of "0.970".
+This is achieved by manipulating the 'reflux ratio' and responding to disturbances like feed flow rate and composition."
 
 
 ** Key Terms and Definitions**
 
-**1. Reflux Ratio (RR):**
-"This is the ratio of liquid returned to the column as reflux to the product withdrawn. A higher RR improves separation but increases energy use. Our range is from **1.0 to 10.0**, with a nominal value of **3.0**."
+1. Reflux Ratio (RR):
+"This is the ratio of liquid returned to the column as reflux to the product withdrawn. A higher RR improves separation but increases energy use. Our range is from "1.0 to 10.0", with a nominal value of '3.0'."
 
-**2. Feed Flow Rate:**
+2. Feed Flow Rate:
 "The quantity of mixture entering the column. A change in this rate can impact separation efficiency."
 
-**3. Feed Composition (z):**
+3. Feed Composition (z):
 "This is the mole fraction of the light component (cyclohexane) in the feed. Fluctuations can disturb the steady-state product quality."
 
-**4. Distillate (xd):**
-"This is the light product collected from the top of the column. Our goal is to control its composition within **0.960 to 0.980** mole fraction."
+4. Distillate (xd):
+"This is the light product collected from the top of the column. Our goal is to control its composition within '0.960 to 0.980' mole fraction."
 
-**5. PID Controller:**
+5. PID Controller:
 "A feedback control loop that adjusts the reflux ratio based on the error between desired and actual distillate composition."
 
 
-** System Layout Explanation**
-"We're working with a *binary distillation column* separating **cyclohexane** and **n-heptane**. The distillate (xd) composition is our **controlled variable**, and the reflux ratio is the **manipulated variable**.
-Measured disturbances include *feed rate* and *feed composition*, which influence system behavior."
+** System Layout Explanation **
+"We're working with a *binary distillation column* separating **cyclohexane** and **n-heptane**. The distillate (xd) composition is our "controlled variable", and the reflux ratio is the "manipulated variable".
+Measured disturbances include 'feed rate' and 'feed composition', which influence system behavior."
 
-** Simulation Overview**
-
-** What we simulate :**
+** Simulation Overview **
 
 * Sudden changes in feed flow or feed composition
 * Observe how the PID controller reacts
@@ -48,11 +46,11 @@ Measured disturbances include *feed rate* and *feed composition*, which influenc
 
 
 ** Results and Observations**
-"In the simulation, the PID controller successfully regulates the distillate composition. Even when we introduced disturbances, it returned to the setpoint of **0.970** within the desired tolerance.
+"In the simulation, the PID controller successfully regulates the distillate composition. Even when we introduced disturbances, it returned to the setpoint of "0.970" within the desired tolerance.
 This confirms the effectiveness of using PID in distillation column control."
 
 
-**: Conclusion**
+** Conclusion **
 
 * We controlled distillate purity using the reflux ratio
 * We handled disturbances with PID control
